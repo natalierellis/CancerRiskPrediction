@@ -5,14 +5,8 @@ I am developing a model using **genomic, clinical, and lifestyle data** from **A
 
 Rather than focusing on a single cancer type, the model includes **all cancers**, aligning with the shift toward **molecular subtyping** over classification by tissue of origin.
 
-## **Why Survival Analysis?**  
-Traditional classification models only predict whether an event (cancer diagnosis) will occur, ignoring **time-to-event** information. **Survival analysis** allows the model to account for **right-censored data** (individuals who haven’t yet developed cancer) and estimate risk over time.
-
-## **Why Deep Learning?**  
-Deep learning enables the model to capture **complex, non-linear relationships** in high-dimensional genomic and clinical data. Unlike traditional survival models like Cox Proportional Hazards, deep learning can **learn risk functions without assuming a predefined relationship between variables**.
-
 ## **Model Approach**  
-The model will likely use **DeepSurv**, a deep learning-based survival analysis framework that extends the Cox model with neural networks. This approach allows for personalized risk estimation based on multiple risk factors.  
+The model will likely use **DeepSurv**, a deep learning-based survival analysis framework that extends the Cox model with neural networks. 
 
 For more information on **DeepSurv**, visit the [DeepSurv GitHub Pages](https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/) and refer to the original paper:  
 
