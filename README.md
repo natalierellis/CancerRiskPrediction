@@ -1,7 +1,7 @@
-# **Cancer Risk Prediction Model - DeepSurv Approach**
+# **Cancer Risk Prediction Model**
 
 ## **Overview**
-This project applies **DeepSurv**, a deep learning survival analysis model, to predict **who** will develop cancer and **when** it might occur. Instead of a binary classification, the model outputs a **risk score (hazard function)** using **EHR, survey, and whole genome sequencing (WGS) data** from the **All of Us** research program.  
+This project will apply **DeepSurv**, a deep learning survival analysis model, to predict **who** will develop cancer and **when** it might occur. Instead of a binary classification, the model outputs a **risk score (hazard function)** using **EHR, survey, and whole genome sequencing (WGS) data** from the **All of Us** research program.  
 Rather than focusing on a single cancer type, the model includes **all cancers**, aligning with the shift toward **molecular subtyping** over classification by tissue of origin.
 
 For more information on **DeepSurv**, visit the [DeepSurv GitHub Pages](https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/).
