@@ -1,9 +1,9 @@
 # **Cancer Risk Prediction Model**
 
 ## **Overview**  
-I am developing a model using **genomic, clinical, and lifestyle data** from **All of Us** to estimate **when** someone might develop cancer, rather than simply predicting **if** they will. Instead of a **binary classification**, the model will output a **risk score (hazard function)**, leveraging **EHR, survey, and whole genome sequencing (WGS) data** from the **All of Us** research program.  
+I am developing a model using genomic, clinical, and lifestyle data from All of Us to estimate when someone might develop cancer, rather than simply predicting if they will. Instead of a binary classification, the model will output a risk score (hazard function), leveraging EHR, survey, and whole genome sequencing (WGS) data from the **All of Us** research program.  
 
-Rather than focusing on a single cancer type, the model includes **all cancers**, aligning with the shift toward **molecular subtyping** over classification by tissue of origin.
+Rather than focusing on a single cancer type, the model includes all cancers, aligning with the shift toward molecular subtyping over classification by tissue of origin.
 
 ## **Model Approach**  
 The model will likely use **DeepSurv**, a deep learning-based survival analysis framework that extends the Cox model with neural networks. 
