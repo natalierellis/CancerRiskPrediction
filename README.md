@@ -16,8 +16,7 @@ The model will likely use **DeepSurv**, a deep learning-based survival analysis 
 
 For more information on **DeepSurv**, visit the [DeepSurv GitHub Pages](https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/) and refer to the original paper:  
 
-📄 **Katzman, Jared L., et al.** *DeepSurv: Personalized Treatment Recommender System Using a Cox Proportional Hazards Deep Neural Network.*  
-BMC Medical Research Methodology 18.1 (2018): 24. 
+📄 **Katzman, Jared L., et al.** *DeepSurv: Personalized Treatment Recommender System Using a Cox Proportional Hazards Deep Neural Network. BMC Medical Research Methodology 18.1 (2018): 24*  
 
 ---
 
@@ -47,5 +46,4 @@ I am currently working on defining and extracting **outcome variables** for the 
 - **Event (Cancer Diagnosis)**: Assigning **1** or **0** based on EHR and survey data.  
 - **Time to Event**: Determining **time from baseline to cancer diagnosis** for event = 1 cases and **censoring time** for event = 0 cases.  
 
-This step is critical for structuring the dataset before moving on to feature selection and model training.
 
