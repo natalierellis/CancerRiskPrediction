@@ -1,8 +1,5 @@
 # **Cancer Risk Prediction Model**
 
-## **Overview**
-# **Cancer Risk Prediction Model**  
-
 ## **Overview**  
 I am developing a model using **genomic, clinical, and lifestyle data** from **All of Us** to estimate **when** someone might develop cancer, rather than simply predicting **if** they will. Instead of a **binary classification**, the model will output a **risk score (hazard function)**, leveraging **EHR, survey, and whole genome sequencing (WGS) data** from the **All of Us** research program.  
 
