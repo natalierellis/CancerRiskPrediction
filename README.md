@@ -19,6 +19,30 @@ This work lies at the intersection of cancer epidemiology, cancer etiology, and 
 - `event = 0` (No Diagnosis): Excludes individuals with any self-reported or EHR-recorded cancer history
 - `time_to_event`: Calculated as time from baseline (e.g., enrollment) to diagnosis or censoring
 
+## Cohort Generation
+
+The cancer and control cohorts were defined based on methodologies from recent studies using the All of Us dataset:
+
+- [Bates et al., 2024, HGG Advances](https://www.cell.com/hgg-advances/fulltext/S2666-2477(25)00008-9#sec-2-5)
+- [Aschebrook-Kilfoy et al., 2022, PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0272522)
+
+### Inclusion Criteria
+- Participants with available **self-reported whole genome sequencing (srWGS)** data  
+- Cancer cases were defined using:
+  - EHR-based **SNOMED** or **ICD** codes indicating a cancer diagnosis  
+  - Cancer diagnosis date extracted from the first EHR mention of a cancer diagnosis  
+- Controls were defined as participants **without any evidence of cancer** in:
+  - EHR diagnosis codes  
+  - EHR condition descriptions  
+  - Survey responses  
+
+### Exclusion Criteria
+- Participants **younger than 20** or **older than 100** at baseline  
+
+### Cohort Size
+
+- **Initial sample**: 38,725 individuals with srWGS data (prior to full quality control and filtering)
+
 ## Feature Engineering
 
 ### Clinical & Lifestyle Variables
