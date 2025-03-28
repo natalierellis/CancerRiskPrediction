@@ -1,43 +1,77 @@
-# **Cancer Risk Prediction Model**
+# Cancer Risk Prediction Model
 
-## **Overview**  
-I am developing a model using genomic, clinical, and lifestyle data from All of Us to estimate when someone might develop cancer, rather than simply predicting if they will. Instead of a binary classification, the model will output a risk score (hazard function), leveraging EHR, survey, and whole genome sequencing (WGS) data from the All of Us research program.  
+## Overview
 
-Rather than focusing on a single cancer type, the model includes all cancers, aligning with the shift toward molecular subtyping over classification by tissue of origin.
+This project develops a cancer risk prediction model using genomic, clinical, and lifestyle data from the All of Us research program. The goal is to identify individuals at elevated risk for developing cancer — enabling earlier screening and prevention.
 
-## **Model Approach**  
-The model will likely use **DeepSurv**, a deep learning-based survival analysis framework that extends the Cox model with neural networks. 
+This work lies at the intersection of cancer epidemiology, cancer etiology, and machine learning. It focuses on predictive modeling using time-to-event (survival) analysis.
 
-For more information on **DeepSurv**, visit the [DeepSurv GitHub Pages](https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/) and refer to the original paper:  
+## Objectives
 
-📄 **Katzman, Jared L., et al.** *DeepSurv: Personalized Treatment Recommender System Using a Cox Proportional Hazards Deep Neural Network. BMC Medical Research Methodology 18.1 (2018): 24*  
+- Predict individual-level cancer risk using multimodal data
+- Integrate polygenic risk scores (PRS) from pan-cancer GWAS
+- Engineer clinically meaningful features from EHR and survey data
+- Apply survival neural networks for time-to-event prediction
+
+## Current Focus: Outcome Definition
+
+- `event = 1` (Cancer Diagnosis): Based on EHR-confirmed cancer diagnosis
+- `event = 0` (No Diagnosis): Excludes individuals with any self-reported or EHR-recorded cancer history
+- `time_to_event`: Calculated as time from baseline (e.g., enrollment) to diagnosis or censoring
+
+## Feature Engineering
+
+### Clinical & Lifestyle Variables
+
+- **Demographics**: Birth decade, gender, race/ethnicity
+- **Family History**: Self-reported history of cancer
+- **Behavioral Factors**:
+  - Smoking history
+  - Alcohol use
+  - Physical activity
+  - Sleep patterns
+  - Diet (if available)
+- **Chronic Conditions**: Obesity, diabetes, cardiovascular disease
+- **Reproductive/Hormonal History**: For sex-specific cancers
+- **Environmental/Trauma Exposure**: If available
+
+### Genomic Variables
+
+- **Polygenic Risk Score (PRS)**: Derived from multi-cancer GWAS summary statistics
+
+## Modeling Approach
+
+- Survival neural network architecture for time-to-event prediction
+- Model trained for prediction, not inference
+
+## Why Pan-Cancer?
+
+Although each cancer has distinct genetic underpinnings, many share common risk factors:
+
+- Behavioral: Smoking, alcohol, obesity, inflammation
+- Socioeconomic and access-related factors
+- Genetic overlap: Shared risk loci such as TERT, TP53
+- Shared environmental exposures
+
+A pan-cancer model enables general risk stratification when the future cancer type is unknown.
+
+## Skills Used
+
+- Survival analysis
+- Feature engineering from large-scale EHR and survey data
+- Genomic data integration (PRS)
+- Epidemiological cohort design
+- Machine learning for healthcare applications
+
+## Data Source
+
+All data come from the All of Us Research Program (via Researcher Workbench), including:
+
+- EHR data
+- Survey/lifestyle data
+- Whole genome sequencing (WGS) data (via linked summary statistics or PRS)
 
 ---
 
-## **Cohort Definition**
-- **Event = 1 (Cancer Diagnosis)**: Identified via **EHR-recorded cancer diagnoses**.
-- **Event = 0 (No Cancer Diagnosis)**: Excludes individuals with cancer in EHR or self-reported cancer history to avoid misclassification.
-
----
-
-## **Feature Engineering**
-### **Clinical & Lifestyle Features**
-- **Demographics**: Age bin, gender, location  
-- **Lifestyle Factors**: Smoking, alcohol use  
-- **Medical History**: Comorbidities  
-
-To prevent the model from learning **“older age = higher cancer risk”**, it will use **age bins** instead of raw age, ensuring the model captures risk factors beyond just age.
-
-### **Genomic Features**
-Evaluating:
-1. **SNPs** – High-dimensional but detailed.  
-2. **Gene-Burden Scores** (preferred) – Aggregates damaging mutations per gene, reducing dimensionality while retaining biological relevance.  
-
----
-
-## **Current Focus: Extracting Outcome Variables**
-I am currently working on defining and extracting **outcome variables** for the survival analysis model:
-- **Event (Cancer Diagnosis)**: Assigning **1** or **0** based on EHR and survey data.  
-- **Time to Event**: Determining **time from baseline to cancer diagnosis** for event = 1 cases and **censoring time** for event = 0 cases.  
-
+For questions or collaboration, feel free to reach out or open an issue.
 
