@@ -1,4 +1,6 @@
-# Cancer Risk Prediction Model
+# Modeling Cancer Etiology with Machine Learning for Individualized Risk Prediction
+
+## Background
 
 ## Overview
 
