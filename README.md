@@ -89,7 +89,3 @@ All data come from the All of Us Research Program (via Researcher Workbench), in
 - Survey/lifestyle data
 - Whole genome sequencing (WGS) data (via linked summary statistics or PRS)
 
----
-
-For questions or collaboration, feel free to reach out or open an issue.
-
