@@ -6,16 +6,7 @@ This project develops a cancer risk prediction model using genomic, clinical, an
 
 This work lies at the intersection of cancer epidemiology, cancer etiology, and machine learning. It focuses on predictive modeling using time-to-event (survival) analysis.
 
-## Pan-Cancer Approach
-
-Although each cancer has distinct genetic underpinnings, many share common risk factors:
-
-- Behavioral: Smoking, alcohol, obesity, inflammation
-- Socioeconomic and access-related factors
-- Genetic overlap: Shared risk loci such as TERT, TP53
-- Shared environmental exposures
-
-A pan-cancer model enables general risk stratification when the future cancer type is unknown.
+While each cancer has distinct biological features, many share common risk factors — such as smoking, alcohol use, obesity, chronic inflammation, family history, and even overlapping genetic variants like TERT and TP53. A pan-cancer framework leverages these shared etiological components to support generalizable risk stratification when the future cancer type is unknown.
 
 ## Objectives
 
@@ -24,7 +15,7 @@ A pan-cancer model enables general risk stratification when the future cancer ty
 - Engineer clinically meaningful features from EHR and survey data
 - Apply survival neural networks for time-to-event prediction
 
-## Current Focus: Outcome Definition
+## Outcome Definition
 
 - `event = 1` (Cancer Diagnosis): Based on EHR-confirmed cancer diagnosis
 - `event = 0` (No Diagnosis): Excludes individuals with any self-reported or EHR-recorded cancer history
