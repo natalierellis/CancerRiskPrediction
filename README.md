@@ -1,7 +1,5 @@
 # Modeling Cancer Etiology with Machine Learning for Individualized Risk Prediction
 
-## Background
-
 ## Overview
 
 This project develops a cancer risk prediction model using genomic, clinical, and lifestyle data from the All of Us research program. The goal is to identify individuals at elevated risk for developing cancer — enabling earlier screening and prevention.
