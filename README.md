@@ -55,10 +55,10 @@ The cancer and control cohorts were defined based on methodologies from recent s
 -  Gender: Consolidated from self-reported gender identity and sex at birth
 -  Race/Ethnicity: Combined and one-hot encoded to capture multiracial identities
 -  In Progress: 
-  -  Family History: Self-reported history of cancer
-  -  Health behaviors: Smoking status, alcohol consumption, physical activity, sleep patterns
-  -  Chronic conditions: EHR-derived indicators for obesity, diabetes, and cardiovascular disease
-  -  Exposure History: Self-reported trauma from survey data
+    -  Family History: Self-reported history of cancer
+    -  Health behaviors: Smoking status, alcohol consumption, physical activity, sleep patterns
+    -  Chronic conditions: EHR-derived indicators for obesity, diabetes, and cardiovascular disease
+    -  Exposure History: Self-reported trauma from survey data
 
 ### Genomic Variables
 
