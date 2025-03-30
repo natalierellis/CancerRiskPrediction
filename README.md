@@ -70,7 +70,7 @@ The cancer and control cohorts were defined based on methodologies from recent s
 ### Geographic Variables
 -  ZIP-code Linked Cancer Prevalence: Mapped from CDC state-level cancer statistics
 
-## Skills Used
+## Tools and Skills
 
 - Querying and joining structured EHR and genomic data
 - Survival analysis using Kaplan-Meier & Cox models
