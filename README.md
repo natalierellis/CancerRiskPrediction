@@ -25,7 +25,7 @@ Unlike classification models, survival analysis accounts for censored observatio
 
 - `event = 1` (Cancer Diagnosis): Based on EHR-confirmed cancer diagnosis
 - `event = 0` (No Diagnosis): Excludes individuals with any self-reported or EHR-recorded cancer history
-- `time_to_event`: Calculated as time from baseline (e.g., enrollment) to diagnosis or censoring
+- `time_to_event`: Calculated as time from birth to diagnosis or censoring
 
 ## Cohort Generation
 
