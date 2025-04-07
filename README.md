@@ -62,7 +62,7 @@ The cancer and control cohorts were defined based on methodologies from recent s
 
 ### Genomic Variables
 
-- **Polygenic Risk Score (PRS)**:  
+- **Polygenic Risk Score (PRS)** (In Progress):  
   Derived from multi-cancer GWAS summary statistics published in  
   [Sato et al., *Nature Communications*, 2023](https://www.nature.com/articles/s41467-023-39136-7).  
   This study conducted a pan-cancer and cross-population GWAS meta-analysis across 13 cancer types and identified shared genetic risk loci.
